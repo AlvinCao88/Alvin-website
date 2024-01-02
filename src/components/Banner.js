@@ -52,8 +52,8 @@ export const Banner = () => {
                 <h1>{`Hey! I'm Alvin, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p className="primary-content text-lg tracking-wider leading-6 w-[96%]">Attending as a Second Year Computer Science Student at the Univeristy of Toronto Scarborough</p>
                   
-                    <button className=" w-[200px]primary-content font-bold text-xl  h-10 w-auto mt-[60px] flex tracking-wider items-center bg-primary-dark   rounded-full border-2 border-border  border-solid"onClick={() => console.log('CV')}>Download Resume <ArrowRight size={25} /></button>
-                    <button className=" in-line w-[200px] primary-content font-bold text-xl mt-[20px] flex tracking-wider items-center bg-[#0200cc] rounded-xl"onClick={() => console.log('connect')}>Let’s Connect <ArrowRight size={25} /></button>
+                    <button className="primary-content font-bold text-xl  h-10 w-auto mt-[60px] flex tracking-wider items-center bg-primary-dark   rounded-full border-2 border-border  border-solid"onClick={() => console.log('CV')}>Download Resume <ArrowRight size={25} /></button>
+                    <button className=" in-line w-auto primary-content font-bold text-xl mt-[20px] flex tracking-wider items-center bg-[#0200cc] rounded-xl"onClick={() => console.log('connect')}>Let’s Connect <ArrowRight size={25} /></button>
                   
           </Col>
           <Col xs={12} md={6} xl={3}>
