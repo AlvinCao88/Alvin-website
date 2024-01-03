@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headShot from "../assets/img/headshot.png"
+// import headShot from "../assets/img/headshot.png"
 import { ArrowRight } from 'react-bootstrap-icons';
 
 export const Banner = () => {
@@ -40,24 +40,24 @@ export const Banner = () => {
 
     return () => { clearInterval(ticker) };
   }, [text, delta, tick]);
-  
-  
-
   return (
     <section className="banner" id="home">
        <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={9}>
-                <span className="font-bold tracking-widest pt-[8px] pr-[10px] text-4xl bg-[#0200cc] border-2 rounded-md border-[#404040] mb-[16px] inline-block">Welcome to My Personal Website</span>
-                <h1>{`Hey! I'm Alvin, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p className="primary-content text-lg tracking-wider leading-6 w-[96%]">Attending as a Second Year Computer Science Student at the Univeristy of Toronto Scarborough</p>
-                  
-                    <button className="primary-content font-bold text-xl  h-10 w-auto mt-[60px] flex tracking-wider items-center bg-primary-dark   rounded-full border-2 border-border  border-solid"onClick={() => console.log('CV')}>Download Resume <ArrowRight size={25} /></button>
-                    <button className=" in-line w-auto primary-content font-bold text-xl mt-[20px] flex tracking-wider items-center bg-[#0200cc] rounded-xl"onClick={() => console.log('connect')}>Let’s Connect <ArrowRight size={25} /></button>
-                  
+       <h1 className="text-bold text-5xl font-black ">{`Hey! I'm Alvin, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+        <Row className="banner-text">
+          <Col xs={12} md={6} xl={2}>
           </Col>
-          <Col xs={12} md={6} xl={3}>
-                  <img className="rounded-full w-auto " src={headShot} alt="headShot Img"/>
+          <Col xs={12} md={6} xl={8}>
+            <p className="primary-content pt-5 text-xl font-meduim tracking-wider leading-10 text-">Currently a second-year UTSC student immersing in the dynamic realm of technology, fervently pursuing a career in software engineering. Join me on this exciting journey as I refine my skills and strive for excellence in the ever-evolving tech landscape.</p>
+          </Col>
+          <Col xs={12} md={6} xl={2}>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col className="d-flex justify-content-center align-items-center">
+            <button className="primary-content font-bold text-xl h-auto w-auto flex tracking-wider items-center bg-primary-dark rounded-full border-2 border-border border-solid" onClick={() => console.log('CV')}>
+              Download Resume <ArrowRight size={25} />
+            </button>
           </Col>
         </Row>
       </Container>
