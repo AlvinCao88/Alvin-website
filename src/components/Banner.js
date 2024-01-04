@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import headShot from "../assets/img/headshot.png"
 import { ArrowRight } from 'react-bootstrap-icons';
 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -44,13 +45,14 @@ export const Banner = () => {
     <section className="banner" id="home">
        <Container>
        <h1 className="text-bold text-5xl font-black ">{`Hey! I'm Alvin, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-        <Row className="banner-text">
-          <Col xs={12} md={6} xl={2}>
+        <Row >
+          <Col xs={2} md={2} xl={2}>
           </Col>
-          <Col xs={12} md={6} xl={8}>
-            <p className="primary-content pt-5 text-xl font-meduim tracking-wider leading-10 text-">Currently a second-year UTSC student immersing in the dynamic realm of technology, fervently pursuing a career in software engineering. Join me on this exciting journey as I refine my skills and strive for excellence in the ever-evolving tech landscape.</p>
+          <Col xs={8} md={8} xl={8}>
+            {/* <p className="bg-foreground primary-content border-border border-2 pt-1 pb-1 rounded-xl text-xl mt-0 font-meduim tracking-wider leading-10 pr-2 pl-2   sm:text-justify md:text-justify xl:text-center">Currently a second-year UTSC student immersing in the dynamic realm of technology, fervently pursuing a career in software engineering. Join me on this exciting journey as I refine my skills and strive for excellence in the ever-evolving tech landscape.</p> */}
+            <p className="bg-foreground primary-content border-border border-2 pt-1 pb-1 rounded-xl text-4xl mt-0 font-meduim tracking-wider leading-10 pr-2 pl-2   sm:text-justify md:text-justify xl:text-center">A Second Year student at the University of Toronto Scarborough specializing in Software Engineering Stream.</p>
           </Col>
-          <Col xs={12} md={6} xl={2}>
+          <Col xs={2} md={2} xl={2}>
           </Col>
         </Row>
         <Row className="justify-content-center">
