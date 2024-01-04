@@ -50,14 +50,14 @@ export const Banner = () => {
           </Col>
           <Col xs={8} md={8} xl={8}>
             {/* <p className="bg-foreground primary-content border-border border-2 pt-1 pb-1 rounded-xl text-xl mt-0 font-meduim tracking-wider leading-10 pr-2 pl-2   sm:text-justify md:text-justify xl:text-center">Currently a second-year UTSC student immersing in the dynamic realm of technology, fervently pursuing a career in software engineering. Join me on this exciting journey as I refine my skills and strive for excellence in the ever-evolving tech landscape.</p> */}
-            <p className="bg-foreground primary-content border-border border-2 pt-1 pb-1 rounded-xl text-4xl mt-0 font-meduim tracking-wider leading-10 pr-2 pl-2   sm:text-justify md:text-justify xl:text-center">A Second Year student at the University of Toronto Scarborough specializing in Software Engineering Stream.</p>
+            <p className="bg-foreground text-primary-content border-border border-2 pt-1 pb-1 rounded-xl text-2xl mt-0 font-normal tracking-wider leading-10 pr-2 pl-2   text-justify  sm:text-justify md:text-justify xl:text-center">A Second Year student at <strong>University of Toronto Scarborough</strong> specializing in <strong>Software Engineering Stream</strong>. Located in <strong className="underline">Toronto, Ontario</strong>.</p>
           </Col>
           <Col xs={2} md={2} xl={2}>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col className="d-flex justify-content-center align-items-center">
-            <button className="primary-content font-bold text-xl h-auto w-auto flex tracking-wider items-center bg-primary-dark rounded-full border-2 border-border border-solid" onClick={() => console.log('CV')}>
+            <button className="text-primary-content font-bold text-xl h-auto w-auto flex tracking-wider items-center bg-primary-dark rounded-full border-2 border-border border-solid p-2" onClick={() => console.log('CV')}>
               Download Resume <ArrowRight size={25} />
             </button>
           </Col>
