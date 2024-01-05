@@ -237,21 +237,12 @@ nav.navbar {
 /************ Banner Css ************/
 .banner {
     margin-top: 0;
-    padding: 150px 0 50px 0;
+    padding: 150px 0 32px 0;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     text-align: center;
-  }
-  
-  .banner h1 {
-    /* font-size: 48px; */
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    margin-bottom: 20px;
-    display: block;
   }
   
   .banner button svg {
@@ -279,12 +270,7 @@ nav.navbar {
   }
   
   /************ Projects Css ************/
-  .project {
-    padding: 80px 0;
-    position: relative;
-    background-color: --background;
-    margin-bottom: 200px;
-  }
+ 
   .project h2 {
       font-weight: 700;
       text-align: center;

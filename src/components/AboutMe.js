@@ -5,7 +5,7 @@ export const AboutMe = () => {
     return(
        
         <section className="aboutme" id='aboutme'>
-            <h1 className="font-bold text-3xl text-center underline"> About Me</h1>
+            <h1 className="pt-8 font-bold text-3xl text-center underline"> About Me</h1>
             <Container>
                 {/* <Row className=" spa ">
                 <Col xs={12} md={8} xl={8} className="  bg-foreground rounded-xl p-4">
@@ -41,7 +41,7 @@ export const AboutMe = () => {
                     </div>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row pt-4 gap-4 ">
+                <div className="pb-8 flex flex-col md:flex-row pt-4 gap-4 ">
                     <div className="basis-4/5 order-last bg-foreground rounded-xl p-4">
                     <div className="  font-semibold text-xl text-center">
                         My Skills
