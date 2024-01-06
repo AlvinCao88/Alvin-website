@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import headShot from "../assets/img/headshot.png"
 import { ArrowRight } from 'react-bootstrap-icons';
+import resume from "../assets/img/resume.pdf"
 
 
 export const Banner = () => {
@@ -41,10 +42,20 @@ export const Banner = () => {
 
     return () => { clearInterval(ticker) };
   }, [text, delta, tick]);
+
+  const linkResume = () => {
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'resume.pdf';  // Specify the desired filename for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="banner" id="home">
        <Container>
-       <h1 className="text-bold text-5xl font-black ">{`Hey! I'm Alvin, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+       <h1 className="text-bold text-5xl font-black ">{`Hey! I'm Alvin, `} <span className="txt-rotate"  data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
         <Row >
           <Col xs={1} md={2} xl={2}>
           </Col>
@@ -57,7 +68,7 @@ export const Banner = () => {
         </Row>
         <Row className="justify-content-center">
           <Col className="d-flex justify-content-center align-items-center">
-            <button className="text-primary-content font-bold text-xl h-auto w-auto flex tracking-wider items-center bg-primary-dark rounded-full border-2 border-border border-solid p-2" onClick={() => console.log('CV')}>
+            <button className="text-primary-content font-bold text-xl h-auto w-auto flex tracking-wider items-center bg-primary-dark rounded-full border-2 border-border border-solid p-2" onClick={linkResume}>
               Download Resume <ArrowRight size={25} />
             </button>
           </Col>

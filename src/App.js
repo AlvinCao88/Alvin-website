@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <NavBar/>
       <Banner/>
-      <hr class="border-8 border-border" />
+      <hr className="border-8 border-border" />
       <AboutMe/>
-      <hr class="border-8 border-border" />
+      <hr className="border-8 border-border" />
       <Projects/>
       <Footer/>
     </div>

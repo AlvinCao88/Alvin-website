@@ -25,7 +25,7 @@ export const AboutMe = () => {
                 </Col>
                 </Row> */}
                 <div className="flex flex-col md:flex-row gap-4">
-                    <div className=" basis-3/4 bg-foreground rounded-xl p-4">
+                    <div className=" basis-3/4 bg-foreground   border-border border-2  rounded-xl p-4">
                     <p className="font-meduim text-xl text-justify tracking-wider mb-0">
                         Currently a second-year UTSC student immersing in the dynamic realm of technology, fervently pursuing a career in software engineering.
                     </p>
@@ -35,17 +35,19 @@ export const AboutMe = () => {
                     
                     </div>
 
-                    <div className="basis-1/4 bg-primary-light  rounded-xl p-4">
-                    <div className="font-semibold text-3xl text-center">
-                        Projects
-                    </div>
+                    <div className="flex items-center justify-center basis-1/4 bg-primary-light rounded-xl p-4">
+                        <a className="text-primary-content" href="#projects">
+                            <button  className="font-semibold text-3xl text-center p-2 hover:underline">
+                                Projects
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div className="pb-8 flex flex-col md:flex-row pt-4 gap-4 ">
-                    <div className="basis-4/5 order-last bg-foreground rounded-xl p-4">
+                    <div className="basis-4/5 order-last bg-foreground border-border border-2 rounded-xl p-4">
                     <div className="  font-semibold text-xl text-center">
                         My Skills
-                        <div className="flex flex-row pt-4 gap-3  flex-wrap content-center ">
+                        <div className="flex flex-row pt-4 gap-3  flex-wrap justify-center ">
                             {/* languages */}
                             <div className="skills">Python</div>
                             <div className="skills">C</div>
@@ -67,10 +69,12 @@ export const AboutMe = () => {
                     </div>
                     </div>
 
-                    <div className="basis-1/5 bg-primary-light rounded-xl p-4">
-                    <div className="text-center font-semibold text-4xl">
-                       Github
-                    </div>
+                    <div className="flex items-center justify-center basis-1/4 bg-primary-light rounded-xl p-4">
+                        <a className="text-primary-content" href="https://github.com/AlvinCao88?tab=repositories"> 
+                            <button className="font-semibold text-3xl text-center p-2 hover:underline">
+                                Github Repo
+                            </button>
+                        </a>
                     </div>
                 </div>
             </Container>
