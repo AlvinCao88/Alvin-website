@@ -25,13 +25,18 @@ export const Projects = () => {
                 </button>
               </a>
              </div> 
+             <div className="  basis-1/2 border-border border-2 bg-foreground rounded-xl p-2">
+              <h3>Predictive Modelling</h3>
+              <p>Intense data analysis of three diverse data sets, which included traffic signs, celestial labeling and heart disease</p>
+              <p> Achieved 6th place out of over 20+ teams</p>
+            </div>
         </div>
 
         {/*  */}
         <div className="pt-4 text-[#ff0200] text-3xl font-bold pb-2">2023</div>
         <div className="flex flex-col  md:flex-row gap-4 ">
             <div className=" basis-1/2 border-border border-2 bg-foreground rounded-xl p-2">
-              <h3>FakeIt</h3>
+              <h3>Fake:It</h3>
               <p>An AI that analyzes facial expressions and speech through webcams and microphones, tailoring responses to emotions for a personalized, confidence-boosting conversation.</p>
               <a className="text-primary-content" href="https://github.com/AlvinCao88/Fake-It"> 
                 <button >

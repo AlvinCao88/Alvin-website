@@ -227,14 +227,14 @@ nav.navbar {
   }
   /************ Skills Css ************/
   .skills{
-    background-color: #cc0200;
+    background-color: #ff0200;
     font: 12px;
     display: flex;
     /* position: relative; */
-    border-radius:5px;
-    border-width: 2px;
+    border-radius:8px;
+    border-width: 3px;
     padding: 1px 5px 1px 5px;
-    border-color: #404040;
+    border-color: #262626;
   }
   
   /************ Projects Css ************/

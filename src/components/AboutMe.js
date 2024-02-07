@@ -47,7 +47,7 @@ export const AboutMe = () => {
                     <div className="basis-4/5 order-last bg-foreground border-border border-2 rounded-xl p-4">
                     <div className="  font-semibold text-xl text-center">
                         My Skills
-                        <div className="flex flex-row pt-4 gap-3  flex-wrap justify-center ">
+                        <div className="flex flex-row pt-4 gap-3 flex-wrap justify-center ">
                             {/* languages */}
                             <div className="skills">Python</div>
                             <div className="skills">C</div>
