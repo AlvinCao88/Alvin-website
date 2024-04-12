@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alvin-website/static/css/main.98d810b3.css",
-    "main.js": "/alvin-website/static/js/main.d1dcab44.js",
+    "main.js": "/alvin-website/static/js/main.b91ee479.js",
     "static/js/787.80cfb610.chunk.js": "/alvin-website/static/js/787.80cfb610.chunk.js",
     "static/media/Halant-Bold.ttf": "/alvin-website/static/media/Halant-Bold.1d96571a4d440479a49c.ttf",
     "static/media/Halant-Regular.ttf": "/alvin-website/static/media/Halant-Regular.f79a2bc24f0d52306af7.ttf",
@@ -13,11 +13,11 @@
     "index.html": "/alvin-website/index.html",
     "static/media/linkedin.svg": "/alvin-website/static/media/linkedin.721d5414c26365f117e71d46b6641cb2.svg",
     "main.98d810b3.css.map": "/alvin-website/static/css/main.98d810b3.css.map",
-    "main.d1dcab44.js.map": "/alvin-website/static/js/main.d1dcab44.js.map",
+    "main.b91ee479.js.map": "/alvin-website/static/js/main.b91ee479.js.map",
     "787.80cfb610.chunk.js.map": "/alvin-website/static/js/787.80cfb610.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98d810b3.css",
-    "static/js/main.d1dcab44.js"
+    "static/js/main.b91ee479.js"
   ]
 }
