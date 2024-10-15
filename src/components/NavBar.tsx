@@ -4,16 +4,15 @@ import ToggleMode from './ToggleMode';
 
 const NavBar = () => {
   return (
-    <nav className="flex flex-col items-center border-b mb-5 py-5 bg-secondary">
-      <div className="flex justify-between max-w-6xl w-full">
+    <nav className="flex flex-items-center  justify-center py-4">
+      <div className="flex flex-row-reverse border w-1/2">
         <div className="flex items-center gap-5">
           <Link href="/">Home</Link>
-          <Link href="/">Profile</Link>
+          <Link href="#home">Profile</Link>
           <Link href="/">Setting</Link>
-        </div>
-        <div className="flex items-center gap-5">
           <ToggleMode />
-        </div>
+          </div>
+    
       </div>
     </nav>
   )

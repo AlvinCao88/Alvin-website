@@ -50,7 +50,12 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
+				
   		},
+			fontFamily:{
+					lora: ["Lora"],
+					source: ["Source Serif 4"]
+			},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

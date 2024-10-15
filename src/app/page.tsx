@@ -1,8 +1,11 @@
+import Hero from "@/components/Hero";
+import SpinningCube from "./SpinningCube";
+
 
 export default function Home() {
   return (
     <div>
-      <p className="text-primary">Hello World!!!</p>
+      <Hero />
     </div>
   );
 }

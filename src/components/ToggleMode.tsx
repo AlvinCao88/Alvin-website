@@ -13,16 +13,16 @@ const ToggleMode = () => {
     }, []); // Empty dependency array to run only on mount
 
     if (!mounted) {
-        return <Button variant="secondary" size="icon" disabled={true} />;
+        return <Button variant="primary" size="icon" disabled={true} />;
     }
 
     const dark = theme === "dark";
 
     return (
         <Button
-            variant="secondary"
+            variant="primary"
             size="icon"
-            onClick={() => setTheme(dark ? "light" : "dark")}
+            onClick={() =>   setTheme(dark ? "light" : "dark")}
         >
             {dark ? <Sun className="hover:cursor-pointer hover:text-primary"/> : <Moon className="hover:cursor-pointer hover:text-primary"/>}
         </Button>
