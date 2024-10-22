@@ -1,3 +1,4 @@
+/* global.css */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 @tailwind base;
@@ -8,27 +9,22 @@
   /* Global Light Mode Variables */
   :root {
     /* Light Mode */
-    --background: 0 0% 98%; /* Off-White (#F9F9F9) */
-    --foreground: 0 0% 17%; /* Dark Charcoal (#2C2C2C) */
-    --primary: 0 72% 51%; /* Bold Red (#E63946) */
-    --primary-foreground: 0 100% 100%; /* Pure White */
-    --secondary: 0 0% 92%; /* Soft Grey (#ECECEC) */
-    --secondary-foreground: 0 0% 17%; /* Dark Charcoal */
-    --highlight: 17 100% 86%; /* Muted Peach (#FFC9B2) */
-    --muted-accent: 17 67% 79%; /* Muted Peach for accents */
-    --border: 0 0% 80%; /* Light grey border */
+    --text: #01101e;
+    --background: #e0f0ff;
+    --primary: #035496;
+    --secondary: #fc554f;
+    --accent: #e7d804;
+    --border: #cbd5e1; /* Example border color */
   }
 
   .dark {
     /* Dark Mode */
-    --background: 210 10% 6%; /* Rich Black (#0B0C10) */
-    --foreground: 0 0% 78%; /* Soft White (#C5C6C7) */
-    --primary: 0 72% 51%; /* Deep Red (#E63946) */
-    --primary-foreground: 0 100% 100%; /* Pure White */
-    --secondary: 210 15% 16%; /* Charcoal Grey (#1F2833) */
-    --secondary-foreground: 0 0% 78%; /* Soft White */
-    --muted-accent: 14 92% 67%; /* Burnt Orange (#F76C5E) */
-    --border: 210 10% 16%; /* Dark grey border */
+    --text: #e1f0fe;
+    --background: #00101f;
+    --primary: #69bafc;
+    --secondary: #b00803;
+    --accent: #fbec18;
+    --border: #334155; /* Dark mode border color */
   }
 }
 
@@ -36,16 +32,18 @@
   * {
     @apply border-border;
   }
-  
+
   body {
-    @apply bg-background text-foreground;
-  }   
-  
+    @apply bg-background text-text;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 400;
+  }
+
   a {
     @apply hover:text-primary;
   }
 
-  div{
-    @apply font-source
+  div {
+    @apply font-source;
   }
 }
