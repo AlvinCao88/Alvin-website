@@ -1,5 +1,4 @@
-/* global.css */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&family=Shrikhand&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,42 +7,38 @@
 @layer base {
   /* Global Light Mode Variables */
   :root {
-    /* Light Mode */
-    --text: #01101e;
-    --background: #e0f0ff;
-    --primary: #035496;
-    --secondary: #fc554f;
-    --accent: #e7d804;
-    --border: #cbd5e1; /* Example border color */
+    --text: #020a18;
+    --background: #e3ecfc;
+    --primary: #0c2e79;
+    --secondary: #f16f8d;
+    --accent: #d56215;
+    --border: #cbd5e1;
   }
 
   .dark {
-    /* Dark Mode */
     --text: #e1f0fe;
     --background: #00101f;
     --primary: #69bafc;
     --secondary: #b00803;
     --accent: #fbec18;
-    --border: #334155; /* Dark mode border color */
+    --border: #334155;
   }
-}
 
-@layer base {
+  /* Apply to all elements */
   * {
     @apply border-border;
   }
 
+  /* Body styles */
   body {
     @apply bg-background text-text;
-    font-family: 'Source Serif 4', serif;
+    font-family: 'Scope One', serif;
     font-weight: 400;
   }
 
+  /* Update link hover behavior */
   a {
     @apply hover:text-primary;
   }
 
-  div {
-    @apply font-source;
-  }
 }
